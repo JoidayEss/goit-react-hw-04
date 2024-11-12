@@ -1,0 +1,10 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.error {
+    font-family: Georgia, 'Times New Roman', Times, inherit;
+    font-size: 20px;
+    margin: 0;
+}

@@ -1,0 +1,20 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 25px 0;
+}
+
+.button {
+    padding: 7px 20px;
+    border: 1px solid gray;
+    border-radius: 7px;
+    cursor: pointer;
+    font-family: Georgia, 'Times New Roman', Times, inherit;
+    font-size: 16px;
+    transition: background-color 1s ease;
+}
+
+.button:hover {
+    background-color: darkgrey;
+}
