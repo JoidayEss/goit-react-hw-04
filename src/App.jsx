@@ -6,6 +6,7 @@ import ImageGallery from "./components/ImageGallery/ImageGallery";
 import LoadMoreBtn from "./components/LoadMoreBtn/LoadMoreBtn";
 import ErrorMessage from "./components/ErrorMessage/ErrorMessage.jsx";
 import ImageModal from "./components/ImageModal/ImageModal.jsx";
+import toast from "react-hot-toast";
 
 const App = () => {
   const [images, setImages] = useState([]);
@@ -39,6 +40,10 @@ const App = () => {
   }, [page, query]);
 
   const handleChangeQuery = (query) => {
+    if (query.trim() === "") {
+      toast.error("This didn't work.");
+      return;
+    }
     setImages([]);
     setQuery(query);
     setPage(1);
